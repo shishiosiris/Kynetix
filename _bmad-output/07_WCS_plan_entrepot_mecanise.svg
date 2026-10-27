@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 630" width="960" height="630" font-family="Arial, Helvetica, sans-serif">
+  <title>Exemple fictif d'entrepôt mécanisé — plan de flux simplifié</title>
+  <desc>Deux niveaux : entrée et stockage au niveau 1, préparation et expédition au niveau 2. Sept étapes, points de lecture, points de décision et voie de rejet.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#334155"/>
+    </marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/>
+    </marker>
+  </defs>
+
+  <rect width="960" height="630" fill="#ffffff"/>
+  <text x="24" y="32" font-size="19" font-weight="bold" fill="#1e293b">Exemple fictif d'entrepôt mécanisé — plan de flux simplifié</text>
+
+  <!-- Niveau 1 -->
+  <rect x="20" y="50" width="920" height="210" rx="10" fill="#eaf2fb" stroke="#8fb0d4" stroke-width="1.5"/>
+  <text x="36" y="78" font-size="15" font-weight="bold" fill="#1d4f8a">NIVEAU 1 — Entrée et stockage</text>
+
+  <rect x="50" y="110" width="200" height="90" rx="8" fill="#ffffff" stroke="#1d4f8a" stroke-width="2"/>
+  <text x="150" y="148" font-size="22" font-weight="bold" fill="#1d4f8a" text-anchor="middle">1</text>
+  <text x="150" y="172" font-size="14" fill="#1e293b" text-anchor="middle">Réception et</text>
+  <text x="150" y="190" font-size="14" fill="#1e293b" text-anchor="middle">mise en bac</text>
+
+  <rect x="330" y="110" width="240" height="90" rx="8" fill="#ffffff" stroke="#1d4f8a" stroke-width="2"/>
+  <text x="450" y="148" font-size="22" font-weight="bold" fill="#1d4f8a" text-anchor="middle">2</text>
+  <text x="450" y="172" font-size="14" fill="#1e293b" text-anchor="middle">Stockage automatisé</text>
+  <text x="450" y="190" font-size="14" fill="#1e293b" text-anchor="middle">(bacs)</text>
+
+  <rect x="700" y="110" width="190" height="90" rx="8" fill="#ffffff" stroke="#64748b" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="795" y="150" font-size="14" fill="#1e293b" text-anchor="middle">Convoyeur montant</text>
+  <text x="795" y="170" font-size="14" fill="#1e293b" text-anchor="middle">vers le niveau 2</text>
+
+  <line x1="250" y1="155" x2="326" y2="155" stroke="#334155" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="570" y1="155" x2="696" y2="155" stroke="#334155" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <circle cx="290" cy="155" r="9" fill="#1f6feb" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="635" cy="155" r="9" fill="#1f6feb" stroke="#ffffff" stroke-width="2"/>
+
+  <!-- Niveau 2 -->
+  <rect x="20" y="290" width="920" height="290" rx="10" fill="#eaf7ee" stroke="#8fc7a2" stroke-width="1.5"/>
+  <text x="36" y="316" font-size="15" font-weight="bold" fill="#1f6b3a">NIVEAU 2 — Préparation et expédition</text>
+
+  <!-- Liaison entre niveaux (dessinée au-dessus des panneaux) -->
+  <line x1="795" y1="200" x2="795" y2="340" stroke="#334155" stroke-width="2.5" stroke-dasharray="6 4" marker-end="url(#arrow)"/>
+  <text x="808" y="285" font-size="12" fill="#475569">monte au niveau 2</text>
+
+  <rect x="700" y="345" width="190" height="80" rx="8" fill="#ffffff" stroke="#1f6b3a" stroke-width="2"/>
+  <text x="795" y="378" font-size="22" font-weight="bold" fill="#1f6b3a" text-anchor="middle">3</text>
+  <text x="795" y="400" font-size="13" fill="#1e293b" text-anchor="middle">Poste de prélèvement</text>
+  <text x="795" y="416" font-size="13" fill="#1e293b" text-anchor="middle">(GTP)</text>
+
+  <rect x="470" y="345" width="170" height="80" rx="8" fill="#ffffff" stroke="#1f6b3a" stroke-width="2"/>
+  <text x="555" y="378" font-size="22" font-weight="bold" fill="#1f6b3a" text-anchor="middle">4</text>
+  <text x="555" y="400" font-size="13" fill="#1e293b" text-anchor="middle">Pesée de contrôle</text>
+
+  <rect x="250" y="345" width="170" height="80" rx="8" fill="#ffffff" stroke="#1f6b3a" stroke-width="2"/>
+  <text x="335" y="378" font-size="22" font-weight="bold" fill="#1f6b3a" text-anchor="middle">5</text>
+  <text x="335" y="400" font-size="13" fill="#1e293b" text-anchor="middle">Fermeture du carton</text>
+
+  <rect x="40" y="345" width="170" height="80" rx="8" fill="#ffffff" stroke="#1f6b3a" stroke-width="2"/>
+  <text x="125" y="378" font-size="22" font-weight="bold" fill="#1f6b3a" text-anchor="middle">6</text>
+  <text x="125" y="400" font-size="13" fill="#1e293b" text-anchor="middle">Étiquetage</text>
+  <text x="125" y="416" font-size="13" fill="#1e293b" text-anchor="middle">d'expédition</text>
+
+  <line x1="700" y1="385" x2="644" y2="385" stroke="#334155" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="470" y1="385" x2="424" y2="385" stroke="#334155" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <line x1="250" y1="385" x2="214" y2="385" stroke="#334155" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <circle cx="672" cy="385" r="9" fill="#1f6feb" stroke="#ffffff" stroke-width="2"/>
+  <path d="M447,372 L460,385 L447,398 L434,385 Z" fill="#f59e0b" stroke="#ffffff" stroke-width="2"/>
+  <text x="447" y="446" font-size="12" fill="#475569" text-anchor="middle">conforme</text>
+
+  <!-- Rejet -->
+  <line x1="555" y1="425" x2="555" y2="476" stroke="#c0392b" stroke-width="2.5" marker-end="url(#arrowRed)"/>
+  <text x="566" y="455" font-size="12" fill="#c0392b">non conforme</text>
+  <rect x="480" y="480" width="190" height="75" rx="8" fill="#fdecea" stroke="#c0392b" stroke-width="2"/>
+  <text x="575" y="512" font-size="14" font-weight="bold" fill="#c0392b" text-anchor="middle">Voie de rejet</text>
+  <text x="575" y="532" font-size="13" fill="#1e293b" text-anchor="middle">traitement manuel</text>
+
+  <!-- Tri et quais -->
+  <line x1="125" y1="425" x2="125" y2="476" stroke="#334155" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <circle cx="98" cy="451" r="9" fill="#1f6feb" stroke="#ffffff" stroke-width="2"/>
+  <path d="M152,438 L165,451 L152,464 L139,451 Z" fill="#f59e0b" stroke="#ffffff" stroke-width="2"/>
+
+  <rect x="40" y="480" width="240" height="75" rx="8" fill="#ffffff" stroke="#1f6b3a" stroke-width="2"/>
+  <text x="70" y="512" font-size="22" font-weight="bold" fill="#1f6b3a">7</text>
+  <text x="165" y="508" font-size="13" fill="#1e293b" text-anchor="middle">Tri par destination</text>
+  <text x="165" y="526" font-size="13" fill="#1e293b" text-anchor="middle">(vers le chargement)</text>
+
+  <line x1="280" y1="517" x2="346" y2="517" stroke="#334155" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <rect x="350" y="480" width="100" height="75" rx="8" fill="#e2e8f0" stroke="#64748b" stroke-width="2"/>
+  <text x="400" y="513" font-size="13" fill="#1e293b" text-anchor="middle">Quais</text>
+  <text x="400" y="531" font-size="13" fill="#1e293b" text-anchor="middle">d'expédition</text>
+
+  <!-- Légende -->
+  <circle cx="40" cy="607" r="8" fill="#1f6feb"/>
+  <text x="56" y="612" font-size="13" fill="#1e293b">Point de lecture (code-barres)</text>
+  <path d="M290,594 L303,607 L290,620 L277,607 Z" fill="#f59e0b"/>
+  <text x="312" y="612" font-size="13" fill="#1e293b">Point de décision du WCS (aiguillage)</text>
+  <line x1="568" y1="607" x2="608" y2="607" stroke="#334155" stroke-width="2.5" marker-end="url(#arrow)"/>
+  <text x="616" y="612" font-size="13" fill="#1e293b">Flux normal</text>
+  <line x1="716" y1="607" x2="756" y2="607" stroke="#c0392b" stroke-width="2.5" marker-end="url(#arrowRed)"/>
+  <text x="764" y="612" font-size="13" fill="#1e293b">Flux rejeté</text>
+</svg>
